@@ -9,7 +9,10 @@ import SubHeading from './components/SubHeading.vue';
     <Heading title="Star Wars" />
     <SubHeading text="A long time ago in a galaxy far, far away...." />
         <section className ="page__container">
-          <Character />
+        <Character image = './assets/images/luke.jpeg' />
+        <Character image = './assets/images/vader.jpeg' />
+        <Character image = './assets/images/c3p0.jpeg' />
+        <Character image = './assets/images/R2D2.jpeg' />
         </section>
         </main>
 </template>

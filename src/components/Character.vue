@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-const count = ref(0)
+defineProps<{ image: any }>();
 </script>
 
 <template>
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+  <div className = "card card--planet">
+    <img className = "card__image card__image--darker-blue" alt = "luke" src= './../assets/images/luke.jpeg' />
   </div>
 </template>
