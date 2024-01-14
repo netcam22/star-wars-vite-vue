@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Heading from './components/Heading.vue';
+import Character from './components/Character.vue';
 </script>
 
 <template>
-  <HelloWorld msg="My Test Vue App" />
+  <main className = "page page--space">
+    <Heading msg="Star Wars" />
+        <h2 className = "page__sub-heading page__sub-heading--lavendar">A long time ago in a galaxy far, far away....</h2>
+        <section className ="page__container">
+          <Character />
+        </section>
+        </main>
 </template>
 
 <style scoped>
