@@ -1,7 +1,7 @@
-#  🚀 BEM WARS 🚀
+#  🚀 STAR WARS VUE APP 🚀
 
 by Annette Le Sage
-version 1.0 (updated 3/12/23)
+version 1.0 (updated 14/1/24)
 
 Star Wars Cards styled with scaleable CSS using BEM notation, OOCSS and SASS. The Language Galactic Basic has been used in the cards, which can be hovered over for a translation into English. Since Galactic-Basic font used uses Roman numbers, for a more interesting user experience, R2-D2 and C3-PO have been spelled out without numbers, as seen for C3-PO on the Star Wars website.
 
