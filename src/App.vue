@@ -5,7 +5,7 @@ import Character from './components/Character.vue';
 
 <template>
   <main className = "page page--space">
-    <Heading msg="Star Wars" />
+    <Heading title="Star Wars" />
         <h2 className = "page__sub-heading page__sub-heading--lavendar">A long time ago in a galaxy far, far away....</h2>
         <section className ="page__container">
           <Character />
