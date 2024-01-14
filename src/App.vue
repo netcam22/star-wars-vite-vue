@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import Heading from './components/Heading.vue';
 import Character from './components/Character.vue';
+import SubHeading from './components/SubHeading.vue';
 </script>
 
 <template>
   <main className = "page page--space">
     <Heading title="Star Wars" />
-        <h2 className = "page__sub-heading page__sub-heading--lavendar">A long time ago in a galaxy far, far away....</h2>
+    <SubHeading text="A long time ago in a galaxy far, far away...." />
         <section className ="page__container">
           <Character />
         </section>
