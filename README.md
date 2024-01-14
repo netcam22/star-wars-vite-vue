@@ -1,18 +1,28 @@
-# Vue 3 + TypeScript + Vite
+#  🚀 BEM WARS 🚀
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+by Annette Le Sage
+version 1.0 (updated 3/12/23)
 
-## Recommended IDE Setup
+Star Wars Cards styled with scaleable CSS using BEM notation, OOCSS and SASS. The Language Galactic Basic has been used in the cards, which can be hovered over for a translation into English. Since Galactic-Basic font used uses Roman numbers, for a more interesting user experience, R2-D2 and C3-PO have been spelled out without numbers, as seen for C3-PO on the Star Wars website.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Techonologies
 
-## Type Support For `.vue` Imports in TS
+This project demonstrates styles in CSS using Block__Element--modifier naming conventions, which have been developed further using SASS. The CSS examples are inlcuded in the assets/css directory and the sass examples are in the assets/sass directory. The final compiled version included in the html file is in the stylesheets directory.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Block__Element--modifier
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+A "Block" is a standalone entity that is meaningful on its own. Examples used in this project include navbar, page and card. These are css classes and in the sass files they provide outer level nesting.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+An "Element" is part of a block. An element has no meaning on its own. Examples in this project include card__header, navbar_item and page__heading. These use the double underscore __ to define themselves as children of their blocks. In the sass files they are nested directly inside the outer levels.
+
+A "Modifier" changes - or modifies- a block or element's appearance or behaviour. Examples in this project include card__image--gold and card__heading--coconut. These use the double hyphen -- to define themselves as children of their elements. In the sass files they are nested directly inside the elements.
+
+## Mixins and Extend
+
+Mixins have been used to group some CSS declarations that are reused. The purpose of these has been primarily to enabling reuse colour schemes and border/shadow styling amoning elements.
+
+The use of extend has enabled sharing of a set of CSS properties from one selector to another. In this project it has enabled the card headings to share properties with the card text.
+
+## Usage
+
+Since the language Galactic Basic has been used in the cards, which you might not be fluent in, you can hover over each card for a translation into English.
