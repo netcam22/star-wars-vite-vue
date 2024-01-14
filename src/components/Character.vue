@@ -4,6 +4,6 @@ defineProps<{ image: any }>();
 
 <template>
   <div className = "card card--planet">
-    <img className = "card__image card__image--darker-blue" alt = "luke" src= './../assets/images/luke.jpeg' />
+    <img v-bind:src="image" className = "card__image card__image--darker-blue" alt = "luke" />
   </div>
 </template>
