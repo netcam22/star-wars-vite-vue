@@ -2,6 +2,8 @@
 import Heading from './components/Heading.vue';
 import Character from './components/Character.vue';
 import SubHeading from './components/SubHeading.vue';
+const images = ['/src/assets/images/luke.jpeg', '/src/assets/images/vader.jpeg', 
+'/src/assets/images/c3p0.jpeg', '/src/assets/images/R2D2.jpeg'];
 </script>
 
 <template>
@@ -9,33 +11,9 @@ import SubHeading from './components/SubHeading.vue';
     <Heading title="Star Wars" />
     <SubHeading text="A long time ago in a galaxy far, far away...." />
         <section className ="page__container">
-          <Suspense>
-        <Character image = '/src/assets/images/luke.jpeg'/>
-      </Suspense>
-      <Suspense>
-        <Character image = '/src/assets/images/vader.jpeg' />
-      </Suspense>
-      <Suspense>
-        <Character image = '/src/assets/images/c3p0.jpeg' />
-      </Suspense>
-      <Suspense>
-        <Character image = '/src/assets/images/R2D2.jpeg' />
-      </Suspense>
+        <Suspense>
+          <Character v-for="(image, index) in images" :image ="image" :key="index"/>
+        </Suspense>
         </section>
         </main>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
