@@ -5,10 +5,9 @@ version 1.0 (updated 17/1/24)
 
 These Star Wars Cards have styled with scaleable CSS using BEM notation, OOCSS and SASS. The Language Galactic Basic has been used in the cards, which can be hovered over for a translation into English.
 
-## Techonologies
+## Technologies
 
 The project uses the JavaScript framework Vue.js and the Vite development environment.
-
 
 ## CSS
 
